@@ -1,49 +1,44 @@
-.form{
+.form {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  position: relative;
 
-    width: 90%;
-    display: flex;
-    align-items: center;
-    position: relative;
+  .form__input {
+    width: 100%;
+    border-radius: 5rem;
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    border: none;
+    box-shadow: inset 0 0.5rem 3rem 0 rgba(5, 95, 240, 0.5);
+  }
+  .form__input:focus {
+    box-shadow: 0 0 1rem 100rem rgba(0, 0, 0, 0.55);
+    outline: none;
+  }
 
-    .form__input{
-        width: 100%;
-        border-radius: 5rem;
-        padding: 2rem 3rem;
-        font-size: 2rem;
-        border: none;
-        box-shadow: inset 0 0.5rem 3rem 0 rgba(5, 95, 240, 0.5);
-      
+  .btn__submit {
+    position: absolute;
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    right: 5px;
+    background-color: rgb(5, 90, 140);
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+    filter: drop-shadow(0 0 0.75rem rgb(220, 20, 60));
+    transition: 0.2s all;
+  }
 
-        
-    }
-    .form__input:focus{
-        box-shadow: 0 0 1rem 100rem rgba(0, 0, 0, 0.55);
-        outline: none;
-    }
+  .btn__submit:hover {
+    background-color: rgb(18, 147, 222);
+    color: black;
+  }
 
-    .btn__submit{
-        position: absolute;
-        border:none;
-        width: 5rem;
-        height: 5rem;
-        border-radius: 5rem;
-        right: 5px;
-        background-color: rgb(5,90,140);
-        font-size: 1.7rem;
-        font-weight: 600;
-        color: #fff;
-        filter: drop-shadow(0 0 0.75rem rgb(220, 20, 60));
-        transition: 0.2s all;
-    }
-
-    .btn__submit:hover{
-        background-color:rgb(18, 147, 222) ;
-        color: black;
-        
-    }
-
-    .btn__submit:active{
-        transform: scale(0.8);
-        filter: drop-shadow(0 0 0.35rem rgb(20, 220, 40));
-    }
+  .btn__submit:active {
+    transform: scale(0.8);
+    filter: drop-shadow(0 0 0.35rem rgb(20, 220, 40));
+  }
 }
